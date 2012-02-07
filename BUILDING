@@ -1,0 +1,16 @@
+Pre-reqs: You need numpy and scipy.
+Follow instructions from here: http://www.scipy.org/Installing_SciPy/Mac_OS_X
+ git clone https://github.com/numpy/numpy.git
+ git clone https://github.com/scipy/scipy.git
+ virtualenv /tmp/sklearn
+ source /tmp/sklearn/bin/activate
+ cd numpy
+ python setup.py build
+ python setup.py install
+ cd ../scipy
+ python setup.py build
+ python setup.py install
+
+cd scikit-learn
+python setup.py install
+python setup.py register -r chishop sdist upload -r chishop
